@@ -1,0 +1,358 @@
+{
+  "type": "object",
+
+  "incident_summary": {
+                      "incident_area": {
+                        "type": "string",
+                        "title": "Please Select the incident area",
+                        "enum": [ "internal", "external"]
+                      },
+                      "state": {
+                        "type": "string",
+                        "title": "State",
+                        "enum": [ "TX", "XYZ"]
+                      },
+                      "city": {
+                        "type": "string",
+                        "title": "City",
+                        "enum": [ "Dallas", "Darton"]
+                      },
+                      "store_id": {
+                        "type": "string",
+                        "title": "Store-ID",
+                        "enum": [ "5181", "5182","5183", "5184"]
+                      },
+                        "incident_type": {
+                          "type": "string",
+                          "title": "Incident Type",
+                          "enum": [ "Assault", "Burglary","Cash Theft", "Other","Passing" , "Voilation"]
+                        },
+                        "incident_date": {
+                          "type": "string",
+                          "format": "date",
+                          "title": "Incident Date"
+                        },
+                        "entered_by": {
+                          "type": "string",
+                          "title": "Incident Entered By"
+                        },
+                        "assigned_to": {
+                          "type": "string",
+                          "title": "Incident Assigned To"
+                        },
+                        "internal_disposition": {
+                          "type": "string",
+                          "title": "Internal Disposition",
+                          "enum": [ "Open -  Pending Assignemnt","Open - Assigned/Active","Closed - Founded", "Closed - Founded"]
+                        },
+                        
+                      "required": ["state", "city" ,"store_id" ]
+      },
+      "suspect_info": {
+                      "last_name": {
+                        "type": "string",
+                        "title": "Last Name"  
+                      },
+                      "first_name": {
+                        "type": "string",
+                        "title": "First Name"  
+                      },
+                      "middle_name": {
+                        "type": "string",
+                        "title": "Middle Name" 
+                      },
+                      "dob": {
+                        "type": "string",
+                        "format": "date",
+                        "title": "Date Of Birth"
+                      },
+                      "gender": {
+                        "type": "string",
+                        "title": "Gender",
+                        "enum": [ "Male","Female","Other"]
+                      },
+                        "height": {
+                          "type": "string",
+                          "title": "Height"
+                        },
+                        "weight": {
+                          "type": "string",
+                          "title": "Weight"
+                        },
+                        "hair_color": {
+                          "type": "string",
+                          "title": "Hair Color"
+                        },
+                        "address": {
+                          "type": "string",
+                          "title": "Address"
+                        },
+                        "city": {
+                          "type": "string",
+                          "title": "City"
+                        },
+                        "state": {
+                          "type": "string",
+                          "title": "State"
+                        },
+                        "zip": {
+                          "type": "string",
+                          "title": "ZIP"
+                        },
+                        
+                      "required": []
+      },
+
+      "vehicle_info": {
+        "make": {
+          "type": "string",
+          "title": "Make"  
+        },
+        "model": {
+          "type": "string",
+          "title": "Model"  
+        },
+        "style": {
+          "type": "string",
+          "title": "Style" 
+        },
+        "color": {
+          "type": "string",
+          "title": "Color(s)"
+        },
+        "state": {
+          "type": "string",
+          "title": "State"
+        },
+          "license": {
+            "type": "string",
+            "title": "License Plate#"
+          },
+          
+        "required": []
+      },
+
+      "police_info": {
+                        "pd_notified": {
+                          "type": "string",
+                          "title": "Police Notified"  
+                        },
+                        "pd": {
+                          "type": "string",
+                          "title": "Police Department"  
+                        },
+                        "pd_city": {
+                          "type": "string",
+                          "title": "PD City" 
+                        },
+                        "pd_state": {
+                          "type": "string",
+                          "title": "PD State"
+                        },
+                        "pd_zip": {
+                          "type": "string",
+                          "title": "PD Zip"
+                        },
+                          "pd_phone": {
+                            "type": "string",
+                            "title": "PD Phone"
+                          },
+                        "pd_off_name": {
+                          "type": "string",
+                          "title": "Officer Name"
+                        },
+                        "pd_off_badge": {
+                          "type": "string",
+                          "title": "Officer Badge"
+                        },
+                          "pd_case": {
+                            "type": "string",
+                            "title": "PD Case#"
+                          },
+                          
+                        "required": []
+      },
+
+      "court_info": {
+                        "c_location": {
+                          "type": "string",
+                          "title": "Court Location"  
+                        },
+                        "c_date": {
+                          "type": "string",
+                          "format": "date",
+                          "title": "Court Date"  
+                        },
+                        "c_subpoena": {
+                          "type": "string",
+                          "title": "Subpoena Issued To" 
+                        },
+                        "c_charges": {
+                          "type": "string",
+                          "title": "List Charges Filed"
+                        },
+                        "c_plea": {
+                          "type": "string",
+                          "title": "Subject Plea Bargain Details"
+                        },
+                          "c_disposition": {
+                            "type": "string",
+                            "title": "Case Disposition"
+                          },
+          
+        "required": []
+      },
+
+      "incident_narrative": {
+                              "type":"object",
+                              "narrative":{
+                                              "type":"object",
+                                              "inc_narrative": {
+                                                              "type": "string",
+                                                              "title": "Initial Narrative"  
+                                                                  }
+                                            },
+                             "supplement":{
+                                              "type":"object",
+                                              "supp_notes": {
+                                                "type": "string",
+                                                "title": "Supplement Notes"  
+                                              },
+                                              "written_by": {
+                                                "type": "string",
+                                                "title": "Narrative Written By" 
+                                              },
+                                              "narr_date": {
+                                                "type": "string",
+                                                "format": "date",
+                                                "title": "Date of Narrative"
+                                              },
+                                            
+
+                                              "required": []
+
+                                            },
+                            "additionalProperties": true
+                             
+                            },
+
+        "cctv": {
+          "type":"object",
+
+
+        "on_video": {
+                        "type": "string",
+                        "title": "Incident(s) on Video"  ,
+                        "Enum":["Yes","No"]
+                    },
+
+          "cam_info":{
+                          "type":"object",
+                          "cam_name": {
+                            "type": "string",
+                            "title": "Camera name"  
+                          },
+                          "date": {
+                            "type": "string",
+                            "title": "Date" ,
+                            "format":"date"
+                          },
+                          "time": {
+                            "type": "string",
+                            "title": "Time (HH:MM:SS)"
+                          }
+                          
+                        },
+        "location": {
+          "type": "string",
+          "title": "Location Video Saved/Stored"  
+                   },
+      
+
+          "required": [],
+
+        "additionalProperties": true
+          
+        },
+
+
+        "witness":{
+                  "type": "array",
+                    "wit_info":{
+                      "type":"object",
+                      "items":{
+                        "name": {
+                          "type": "string",
+                          "title": "Name"  
+                        },
+                        "relation": {
+                          "type": "string",
+                          "title": "Relation to Company" 
+                        
+                        },
+                        "dob": {
+                          "type": "string",
+                          "title": "DOB",
+                          "format":"date"
+  
+                        },
+                        "ph_number": {
+                          "type": "string",
+                          "title": "Phone Number"
+                        }
+
+                      },                     
+          "required": [],
+          "additionalProperties": true
+          }
+        },
+        "property_info":{
+          "type":"object",
+          "item_type": {
+            "type": "string",
+            "title": "Item Type"  
+          },
+          "sku_upc": {
+            "type": "string",
+            "title": "SKU or UPC" 
+          
+          },
+          "qty": {
+            "type": "string",
+            "title": "Qty",
+            "format":"number"
+
+          },
+          "unit_val": {
+            "type": "string",
+            "title": "Unit Retail Value $"
+          },
+          "total_val": {
+            "type": "string",
+            "title": "Total Value $"
+          },
+          "desc": {
+            "type": "string",
+            "title": "Description" 
+          
+          },
+          "recovered": {
+            "type": "string",
+            "title": "Recovered",
+            "Enum":["Yes","No"]
+
+          },
+          "damaged": {
+            "type": "string",
+            "title": "Damaged",
+            "Enum":["Yes","No"]
+          },
+"required": [],
+
+"additionalProperties": true
+
+}
+
+
+
+}

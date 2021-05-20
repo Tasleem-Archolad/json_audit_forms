@@ -1,0 +1,415 @@
+{
+	"type": "Categorization",
+	"elements": [
+		{
+			"type": "Category",
+			"label": "Incident Summary",
+			"elements":[{
+						"type": "VerticalLayout",
+						"elements": [							
+										{
+											"type": "Control",
+											"scope": "#/incident_summary/incident_area",
+											"options": {
+														"format": "radio"
+														}
+										},
+										{
+											"type": "Control",
+											"scope": "#/incident_summary/state",
+											"options": {
+															"format": "radio"
+														}
+										},
+										{
+											"type": "Control",
+											"scope": "#/incident_summary/city",
+											"options": {
+															"format": "radio"
+														}
+										},
+										{
+											"type": "Control",
+											"scope": "#/incident_summary/store_id",
+											"options": {
+															"format": "radio"
+														}
+										},
+                    {
+											"type": "Control",
+											"scope": "#/incident_summary/incident_type",
+											"options": {
+															"format": "radio"
+														}
+										},
+										{
+											"type": "Control",
+											"scope": "#/incident_summary/incident_date"
+										},
+										{
+											"type": "Control",
+											"scope": "#/incident_summary/entered_by"
+										},
+										{
+											"type": "Control",
+											"scope": "#/incident_summary/assigned_to"
+										},
+										{
+											"type": "Control",
+											"scope": "#/incident_summary/internal_disposition",
+											"options": {
+															"format": "radio"
+														}
+										}
+									]
+						}]
+			
+		},
+		{
+			"type": "Category",
+			"label": "Suspect Information",
+			"elements":[{
+						"type": "VerticalLayout",
+						"elements": [
+                            {
+                              "type": "Control",
+                              "scope": "#/suspect_info/last_name"
+                            },
+                            {
+                              "type": "Control",
+                              "scope": "#/suspect_info/first_name"
+                            },
+                            {
+                              "type": "Control",
+                              "scope": "#/suspect_info/middle_name"
+                            },
+                            {
+                              "type": "Control",
+                              "scope": "#/suspect_info/dob"
+                            },
+                            {
+                              "type": "Control",
+                              "scope": "#/suspect_info/gender",
+                              "options": {
+                                            "format": "radio"
+                                          }
+                            },
+                            {
+                              "type": "Control",
+                              "scope": "#/suspect_info/height"
+                            },
+                            {
+                              "type": "Control",
+                              "scope": "#/suspect_info/weight"
+                            },
+                            {
+                              "type": "Control",
+                              "scope": "#/suspect_info/hair_color"
+                            },
+                            {
+                              "type": "Control",
+                              "scope": "#/suspect_info/address"
+                            },
+                            {
+                              "type": "Control",
+                              "scope": "#/suspect_info/state"
+                            },
+                            {
+                              "type": "Control",
+                              "scope": "#/suspect_info/zip"
+                            }
+
+									      ]
+						}]
+			
+	},
+
+  {
+    "type": "Category",
+    "label": "Vehicle Information",
+    "elements":[{
+          "type": "VerticalLayout",
+          "elements": [
+                          {
+                            "type": "Control",
+                            "scope": "#/vehicle_info/make"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/vehicle_info/model"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/vehicle_info/style"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/vehicle_info/color"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/vehicle_info/state"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/vehicle_info/license"
+                          }
+
+                      ]
+          }]
+    
+  },
+
+
+  {
+    "type": "Category",
+    "label": "Police Information",
+    "elements":[{
+          "type": "VerticalLayout",
+          "elements": [
+                          {
+                            "type": "Control",
+                            "scope": "#/police_info/pd_notified"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/police_info/pd"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/police_info/pd_city"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/police_info/pd_state"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/police_info/pd_zip"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/police_info/pd_phone"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/police_info/pd_off_name"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/police_info/pd_off_badge"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/police_info/pd_case"
+                          }
+
+                      ]
+          }]
+    
+  },
+  {
+    "type": "Category",
+    "label": "Court Information",
+    "elements":[{
+          "type": "VerticalLayout",
+          "elements": [
+                          {
+                            "type": "Control",
+                            "scope": "#/court_info/c_location"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/court_info/c_date"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/court_info/c_subpoena"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/court_info/c_charges"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/court_info/c_plea"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/court_info/c_disposition"
+                          }
+
+                      ]
+          }]
+    
+  },
+
+  {
+    "type": "Category",
+    "label": "Incident Narrative",
+    "elements":[{
+          "type": "VerticalLayout",
+          "elements": [
+                        {
+                          "type": "Group",
+                          "elements": [
+                            {
+                              "type": "Control",
+                              "options": {
+                                "multi": true
+                              },
+                              "scope": "#/incident_narrative/narrative/inc_narrative"
+                            }]
+                        },
+                        {
+                          "type": "Group",
+                                  "elements": [
+                                  {
+                                    "type": "Control",
+                                    "scope": "#/incident_narrative/supplement/supp_notes"
+                                  },
+                                  {
+                                    "type": "Control",
+                                    "scope": "#/incident_narrative/supplement/written_by"
+                                  },
+                                  {
+                                    "type": "Control",
+                                    "scope": "#/incident_narrative/supplement/narr_date"
+                                  }
+                                ]
+                      }
+
+                    ]
+          }]
+    
+  },
+
+  {
+    "type": "Category",
+    "label": "CCTV",
+    "elements":[{
+          "type": "VerticalLayout",
+          "elements": [
+                        {
+                          "type": "Group",
+                          "elements": [
+                            {
+                              "type": "Control",
+                              "scope": "#/cctv/on_video"
+                            }]
+                        },
+                        {
+                          "type": "Group",
+                                  "elements": [
+                                  {
+                                    "type": "Control",
+                                    "scope": "#/cctv/cam_info/cam_name"
+                                  },
+                                  {
+                                    "type": "Control",
+                                    "scope": "#/cctv/cam_info/date"
+                                  },
+                                  {
+                                    "type": "Control",
+                                    "scope": "#/cctv/cam_info/time"
+                                  }
+                                ]
+                      },
+                      {
+                        "type": "Group",
+                        "elements": [
+                          {
+                            "type": "Control",
+                            "options": {
+                              "multi": true
+                            },
+                            "scope": "#/cctv/location"
+                          }]
+                      }
+
+                    ]
+          }]
+    
+  },
+
+  {
+    "type": "Category",
+    "label": "Witness Information",
+    "elements":[{
+          "type": "VerticalLayout",
+          "elements": [
+                          {
+                            "type": "Control",
+                            "scope": "#/witness/wit_info/items/name"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/witness/wit_info/items/relation"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/witness/wit_info/items/dob"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/witness/wit_info/items/ph_number"
+                          }
+
+                      ]
+          }]
+    
+  },
+
+  {
+    "type": "Category",
+    "label": "Property/Merchandise",
+    "elements":[{
+          "type": "VerticalLayout",
+          "elements": [
+                          {
+                            "type": "Control",
+                            "scope": "#/property_info/item_type"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/property_info/sku_upc"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/property_info/qty"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/property_info/unit_val"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/property_info/total_val"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/property_info/desc",
+                            "options": {
+                              "multi": true
+                            }
+
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/property_info/recovered"
+                          },
+                          {
+                            "type": "Control",
+                            "scope": "#/property_info/damaged"
+                          }
+                      ]
+          }]
+    
+  }
+],
+"options": {
+  "variant": "stepper",
+  "showNavButtons": true
+} 
+
+}
