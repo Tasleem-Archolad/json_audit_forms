@@ -16,31 +16,19 @@
 										},
 										{
 											"type": "Control",
-											"scope": "#/incident_summary/state",
-											"options": {
-															"format": "radio"
-														}
+											"scope": "#/incident_summary/state"
 										},
 										{
 											"type": "Control",
-											"scope": "#/incident_summary/city",
-											"options": {
-															"format": "radio"
-														}
+											"scope": "#/incident_summary/city"
 										},
 										{
 											"type": "Control",
-											"scope": "#/incident_summary/store_id",
-											"options": {
-															"format": "radio"
-														}
+											"scope": "#/incident_summary/store_id"
 										},
                     {
 											"type": "Control",
-											"scope": "#/incident_summary/incident_type",
-											"options": {
-															"format": "radio"
-														}
+											"scope": "#/incident_summary/incident_type"
 										},
 										{
 											"type": "Control",
@@ -56,10 +44,7 @@
 										},
 										{
 											"type": "Control",
-											"scope": "#/incident_summary/internal_disposition",
-											"options": {
-															"format": "radio"
-														}
+											"scope": "#/incident_summary/internal_disposition"
 										}
 									]
 						}]
