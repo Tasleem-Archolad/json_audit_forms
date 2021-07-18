@@ -16,5 +16,6 @@ export class DataDisplayComponent extends JsonFormsControl {
 
   public mapAdditionalProps(props: ControlProps) {
     this.dataAsString = JSON.stringify(props.data, null, 2);
+    console.log(this.dataAsString)
   }
 }

@@ -12,5 +12,6 @@
     {
       "path": "./src/tsconfig.spec.json"
     }
-  ]
+  ],
+  "experimentalDecorators": true
 }

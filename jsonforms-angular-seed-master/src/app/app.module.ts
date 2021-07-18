@@ -1,5 +1,5 @@
 import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
+import { Injectable, NgModule } from '@angular/core';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { BrowserModule } from '@angular/platform-browser';
@@ -11,6 +11,12 @@ import { CustomAutocompleteControlRenderer } from './custom.autocomplete';
 import { DataDisplayComponent } from './data.control';
 import { LangComponent } from './lang.control';
 
+import { ɵMatchMedia, BreakPointRegistry, PrintHook } from '@angular/flex-layout/core';                
+import { FlexLayoutModule, StyleUtils, StylesheetMap, LayoutStyleBuilder, MediaMarshaller, LayoutAlignStyleBuilder, FlexStyleBuilder } from '@angular/flex-layout';
+
+@Injectable({
+  providedIn: 'root'
+})
 
 @NgModule({
   declarations: [
@@ -30,6 +36,17 @@ import { LangComponent } from './lang.control';
   ],
   schemas: [],
   entryComponents: [CustomAutocompleteControlRenderer, LangComponent, DataDisplayComponent],
+  providers:[
+    PrintHook,
+    StyleUtils, 
+    StyleSheet,
+    StylesheetMap, 
+    LayoutAlignStyleBuilder,
+    LayoutStyleBuilder,
+    FlexStyleBuilder,
+    MediaMarshaller,
+    ɵMatchMedia,
+    BreakPointRegistry],
   bootstrap: [AppComponent]
 })
 export class AppModule {
