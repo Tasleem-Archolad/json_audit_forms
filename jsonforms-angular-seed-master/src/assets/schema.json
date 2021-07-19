@@ -104,31 +104,46 @@
       },
 
       "vehicle_info": {
-        "make": {
-          "type": "string",
-          "title": "Make"  
-        },
-        "model": {
-          "type": "string",
-          "title": "Model"  
-        },
-        "style": {
-          "type": "string",
-          "title": "Style" 
-        },
-        "color": {
-          "type": "string",
-          "title": "Color(s)"
-        },
-        "state": {
-          "type": "string",
-          "title": "State"
-        },
-          "license": {
-            "type": "string",
-            "title": "License Plate#"
-          },
-          
+                        "vehicle":{
+                                  "type": "object",
+                                   "properties": {
+                                                    "make": {
+                                                      "type": "string",
+                                                      "title": "Make"  
+                                                    },
+                                                    "model": {
+                                                      "type": "string",
+                                                      "title": "Model"  
+                                                    },
+                                                    "style": {
+                                                      "type": "string",
+                                                      "title": "Style" 
+                                                    },
+                                                    "color": {
+                                                      "type": "string",
+                                                      "title": "Color(s)"
+                                                    },
+                                                    "state": {
+                                                      "type": "string",
+                                                      "title": "State"
+                                                    },
+                                                      "license": {
+                                                        "type": "string",
+                                                        "title": "License Plate#"
+                                                      }
+                                                }
+                                     
+
+                                  },
+                          "type": "object",
+                          "properties": {
+                                              "vehicles": {
+                                                "type": "array",
+                                                "items": {
+                                                            "$ref": "#/vehicle_info/vehicle"
+                                                            }
+                                              }
+                          },  
         "required": []
       },
 

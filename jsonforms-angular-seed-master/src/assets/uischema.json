@@ -114,30 +114,31 @@
     "label": "Vehicle Information",
     "elements":[{
           "type": "VerticalLayout",
+          "scope": "#/properties/orders",
           "elements": [
                           {
                             "type": "Control",
-                            "scope": "#/vehicle_info/make"
+                            "scope": "#/vehicle_info/vehicle/properties/make"
                           },
                           {
                             "type": "Control",
-                            "scope": "#/vehicle_info/model"
+                            "scope": "#/vehicle_info/vehicle/properties/model"
                           },
                           {
                             "type": "Control",
-                            "scope": "#/vehicle_info/style"
+                            "scope": "#/vehicle_info/vehicle/properties/style"
                           },
                           {
                             "type": "Control",
-                            "scope": "#/vehicle_info/color"
+                            "scope": "#/vehicle_info/vehicle/properties/color"
                           },
                           {
                             "type": "Control",
-                            "scope": "#/vehicle_info/state"
+                            "scope": "#/vehicle_info/vehicle/properties/state"
                           },
                           {
                             "type": "Control",
-                            "scope": "#/vehicle_info/license"
+                            "scope": "#/vehicle_info/vehicle/properties/license"
                           }
 
                       ]
